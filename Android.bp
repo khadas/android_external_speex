@@ -16,7 +16,10 @@
 
 cc_library_static {
     name: "libspeex",
-
+    vendor_available: true,
+    vndk: {
+        enabled: true,
+    },
     arch: {
         arm: {
             instruction_set: "arm",
